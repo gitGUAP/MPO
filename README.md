@@ -1,5 +1,4 @@
-# Метрология программного обеспечения
-## Tiny Renderer or how OpenGL works: software rendering
+# Tiny Renderer or how OpenGL works: software rendering
 
 Commit https://github.com/ssloy/tinyrenderer/tree/3b7da48e8b03375d1818cffb133c57e32e2b2c55
 
