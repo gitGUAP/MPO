@@ -114,10 +114,3 @@ int main(int argc, char** argv) {
 	delete[] zbuffer;
 	return 0;
 }
-
-
-Format!Style:
-C++ online code formatter © 2014 by KrzaQ
-
-Powered by vibe.d, the D language and clang - format
-
