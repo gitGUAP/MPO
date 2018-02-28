@@ -18,4 +18,4 @@ public:
 	std::vector<int> face(int idx);
 };
 
-#endif //__MODEL_H__
+#endif  //__MODEL_H__

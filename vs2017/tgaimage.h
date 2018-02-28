@@ -37,44 +37,22 @@ struct TGAColor {
 	};
 	int bytespp;
 
-	TGAColor()
-		: val(0)
-		, bytespp(1)
-	{
-	}
+	TGAColor() : val(0), bytespp(1) {}
 
 	TGAColor(unsigned char R, unsigned char G, unsigned char B, unsigned char A)
-		: b(B)
-		, g(G)
-		, r(R)
-		, a(A)
-		, bytespp(4)
-	{
-	}
+		: b(B), g(G), r(R), a(A), bytespp(4) {}
 
-	TGAColor(int v, int bpp)
-		: val(v)
-		, bytespp(bpp)
-	{
-	}
+	TGAColor(int v, int bpp) : val(v), bytespp(bpp) {}
 
-	TGAColor(const TGAColor& c)
-		: val(c.val)
-		, bytespp(c.bytespp)
-	{
-	}
+	TGAColor(const TGAColor& c) : val(c.val), bytespp(c.bytespp) {}
 
-	TGAColor(const unsigned char* p, int bpp)
-		: val(0)
-		, bytespp(bpp)
-	{
+	TGAColor(const unsigned char* p, int bpp) : val(0), bytespp(bpp) {
 		for (int i = 0; i < bpp; i++) {
 			raw[i] = p[i];
 		}
 	}
 
-	TGAColor& operator=(const TGAColor& c)
-	{
+	TGAColor& operator=(const TGAColor& c) {
 		if (this != &c) {
 			bytespp = c.bytespp;
 			val = c.val;
@@ -94,11 +72,7 @@ protected:
 	bool unload_rle_data(std::ofstream& out);
 
 public:
-	enum Format {
-		GRAYSCALE = 1,
-		RGB = 3,
-		RGBA = 4
-	};
+	enum Format { GRAYSCALE = 1, RGB = 3, RGBA = 4 };
 
 	TGAImage();
 	TGAImage(int w, int h, int bpp);
@@ -119,4 +93,4 @@ public:
 	void clear();
 };
 
-#endif //__IMAGE_H__
+#endif  //__IMAGE_H__
