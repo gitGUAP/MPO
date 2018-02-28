@@ -1,5 +1,6 @@
 # Tiny Renderer or how OpenGL works: software rendering
 
+clang-format style: *WebKit*  
 Commit https://github.com/ssloy/tinyrenderer/tree/3b7da48e8b03375d1818cffb133c57e32e2b2c55
 
 ![preview](https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/00-home/africanhead.png)
