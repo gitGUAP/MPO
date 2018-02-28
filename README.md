@@ -3,11 +3,11 @@
 
 Commit https://github.com/ssloy/tinyrenderer/tree/3b7da48e8b03375d1818cffb133c57e32e2b2c55
 
-!()[https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/00-home/africanhead.png]
+![preview](https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/00-home/africanhead.png)
 
 ---
 
-Tiny Renderer, https://github.com/ssloy/tinyrenderer
+Tiny Renderer, https://github.com/ssloy/tinyrenderer  
 Copyright Dmitry V. Sokolov
 
 This software is provided 'as-is', without any express or implied warranty.
