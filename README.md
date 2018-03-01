@@ -1,9 +1,5 @@
 # ХЕШИРОВАНИЕ ДАННЫХ - Двойное хеширование
 
-<p align="center">
-  <img src="https://i.imgur.com/uJA1Lis.png?1">
-</p>
-
 ---
 
 Copyright Sergey Grishin
