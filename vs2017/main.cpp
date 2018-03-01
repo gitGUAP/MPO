@@ -99,17 +99,6 @@ int main(int argc, char** argv) {
 		image.write_tga_file("output.tga");
 	}
 
-	{  // dump z-buffer (debugging purposes only)
-		TGAImage zbimage(width, height, TGAImage::GRAYSCALE);
-		for (int i = 0; i < width; i++) {
-			for (int j = 0; j < height; j++) {
-				zbimage.set(i, j, TGAColor(zbuffer[i + j * width], 1));
-			}
-		}
-		zbimage.flip_vertically();  // i want to have the origin at the left bottom
-									// corner of the image
-		zbimage.write_tga_file("zbuffer.tga");
-	}
 	delete model;
 	delete[] zbuffer;
 	return 0;
