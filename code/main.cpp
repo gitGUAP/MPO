@@ -2,9 +2,11 @@
 #include <iostream>
 #include <string>
 #include <time.h>
+
 using namespace std;
 const int N = 2500;
 const int K = 3;
+
 void menu(HashMap<string> &HMap) {
   cout << endl
        << "1 - Print\n"
