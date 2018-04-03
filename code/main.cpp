@@ -22,7 +22,6 @@ void menu(HashMap<string> &HMap) {
   switch (choice) {
   case 1: {
     HMap.print();
-    menu(HMap);
     break;
   }
   case 2: {
@@ -37,7 +36,6 @@ void menu(HashMap<string> &HMap) {
       getline(cin, val);
       HMap.put(key, val);
     }
-    menu(HMap);
     break;
   }
   case 3: {
@@ -49,22 +47,19 @@ void menu(HashMap<string> &HMap) {
         isdigit(key[4])) {
       cout << "Elements with collisions: " << HMap.del(key).size() << endl;
     }
-    menu(HMap);
     break;
   }
   case 4: {
     HMap.excel(string("excel.txt"));
-    cout << "OK" << endl;
-    menu(HMap);
     break;
   }
   case 5: {
-    break;
+    return;
   }
   default:
     cout << "Incorrect choice." << endl;
-    menu(HMap);
   }
+  menu(HMap);
 }
 int main() {
   srand(time(0));

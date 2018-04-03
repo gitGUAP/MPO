@@ -3,7 +3,9 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+
 using namespace std;
+
 template <typename V> class HashMap {
 public:
   HashMap(int N) {
@@ -69,17 +71,6 @@ public:
       }
     }
     cout << "OVERFLOW" << endl;
-  }
-  HashNode<V> *seach(string &key) {
-    unsigned int h1 = HashMap::h1(key);
-    unsigned int h2 = HashMap::h2(key);
-    for (size_t i = 0; i < MAP_SIZE; i++) {
-      if (map[h1 % N] != nullptr && map[h1 % N]->getKey() == key)
-        return map[h1 % N];
-      else
-        h1 = (h1 + h2) % N;
-    }
-    return nullptr;
   }
   vector<HashNode<V> *> del(string &key) {
     unsigned int h1 = HashMap::h1(key);
