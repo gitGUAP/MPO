@@ -5,7 +5,7 @@
 
 using namespace std;
 const int N = 2500;
-const int K = 3;
+const int K = 800;
 
 void menu(HashMap<string> &HMap) {
   cout << endl
@@ -66,7 +66,7 @@ int main() {
   HashMap<string> HMap(N);
   for (int i = 0; i < K; i++) {
     string strKey(6, '0');
-    string strVal(10 + rand() % 70, '\0');
+    string strVal(10 + rand() % 2, '\0');
     strKey[0] = 'A' + rand() % 26;
     strKey[1] = '0' + rand() % 9;
     strKey[2] = '0' + rand() % 9;
